@@ -1,0 +1,24 @@
+package com.example.dmtest.test;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+
+public class DOMTest {
+
+	public static void main(String[] args) {
+		//创建一个documentBuilderFactory对象
+		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+		//创建一个documentbuilder对象
+		try {
+			//创建一个DocumentBuilder对象
+			DocumentBuilder db = dbf.newDocumentBuilder();
+		    //通过DocumentBuilder对象的parse方法加载books.xml文件到当前项目下
+		} catch (ParserConfigurationException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+}

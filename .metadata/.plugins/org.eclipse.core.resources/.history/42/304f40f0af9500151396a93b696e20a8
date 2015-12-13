@@ -1,0 +1,21 @@
+package com.example.io;
+
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class BrAndBwOrPwDemo {
+
+	public static void main(String[] args) throws IOException {
+		// 对文件进行读写操作
+		BufferedReader br = new BufferedReader(new InputStreamReader(
+				new FileInputStream("demo//out.txt")));
+
+		String line = br.readLine();
+		while(line!=null){
+			System.out.println(line);
+		}
+	}
+
+}
